@@ -1,0 +1,29 @@
+#grille{
+    display:block;
+    margin:auto;
+    width:310px;
+    padding:0px;
+    background-image:url("img/morpion_grid.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.case{
+    display:inline-block;
+    width:100px;
+    margin:0px;
+    height:100px;
+    position:relative;
+    cursor:pointer;
+}
+.x,.o{
+    position:absolute;
+    left: 30%;
+    top: 0%;
+    width: 100%;
+    font-size:70;
+    color:red;
+    display:none;
+}
+
