@@ -1,7 +1,14 @@
+body{
+    background-image:url("img/jeuxmorpion.jpg");
+    background-size:100%;
+    background-repeat: no-repeat; 
+    background-attachment:fixed;
+}
+
 #grille{
     display:block;
     margin:auto;
-    width:310px;
+    width:610px;
     padding:0px;
     background-image:url("img/morpion_grid.png");
     background-size:100%;
@@ -11,19 +18,63 @@
 
 .case{
     display:inline-block;
-    width:100px;
+    width:200px;
     margin:0px;
-    height:100px;
+    height:200px;
     position:relative;
     cursor:pointer;
 }
-.x,.o{
+.x {
     position:absolute;
-    left: 30%;
+    left: 10%;
     top: 0%;
     width: 100%;
-    font-size:70;
-    color:red;
-    display:none;
+    font-size:150px;
+    color:rgba(231, 76, 60,1.0);
+    display:block;
+}
+
+#event{
+    color:rgba(236, 240, 241,1.0);
+    font-size:30px;
+    text-align:center;
+    display:block;
+    margin:auto;
+    
+}
+
+#reset{
+    border-radius:100%;
+    width:90px;
+    height:90px;
+    margin-bottom:30px;
+    margin-top:30px;
+    text-align:center;
+    font-size:30px;
+    background-color:rgba(46, 204, 113,1.0);
+}
+
+.board img:last-child{
+    float:right;
+    margin:50px;
+}
+
+.board img:first-child{
+    float:left;
+    margin:50px;
+}
+
+.unfocus{
+    width:50px;
+    height:50px;
+}
+
+.focus{
+    width:200px;
+    height:200px;
+}
+
+.board{
+    display:block;
 }
 
